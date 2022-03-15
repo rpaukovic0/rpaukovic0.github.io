@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Web stranica</title>
+
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="./styles.css" />
+
+
+</head>
+
+<body>
+
+  <!--Start navbar-->
+
+
+  <nav class="py-3 navbar navbar-expand-lg fixed-top autor">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+
+        <img
+          src="data:image/jpeg;base64,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"
+          class="logo" alt="logo" height="100px" width="100px" />
+
+        Robert Pauković
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="o meni.html">O meni</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projekt.html">Projekt</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kontakt.html">Kontakt</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="prijava.html">Prijava</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+
+  <!--End navbar-->
+
+  <!--Carousel slides-->
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="https://dynaimage.cdn.cnn.com/cnn/c_fill,g_auto,w_1200,h_675,ar_16:9/https%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F191120053137-03-milky-way-images-australia.jpg"
+          class="d-block w-100" alt="..." height="500px" width="500px">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Moja web stranica</h1>
+          <p>Primjer moje web stranice</p>
+
+          <div class="slider-btn">
+
+            <a href="#" type="submit" class="btn btn-primary">Neki servisi</a>
+            <a href="#" type="submit" class="btn btn-primary">Ostalo</a>
+
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg" class="d-block w-100" alt="..."
+          height="500px" width="500px">
+
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Moja web stranica</h1>
+          <p>Primjer moje web stranice</p>
+          <div class="slider-btn">
+
+            <a href="#" type="submit" class="btn btn-primary">Neki servisi</a>
+            <a href="#" type="submit" class="btn btn-primary">Ostalo</a>
+
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://img.freepik.com/free-photo/silhouette-couple-love-kissing-sunset-couple-love-concept_1150-1456.jpg?size=626&ext=jpg"
+          class="d-block w-100" alt="..." height="500px" width="500px">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Moja web stranica</h1>
+          <p>Primjer moje web stranice</p>
+          <div class="slider-btn">
+            <a href="#" type="submit" class="btn btn-primary">Neki servisi</a>
+            <a href="#" type="submit" class="btn btn-primary">Ostalo</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  </br>
+  </br>
+  </br>
+  </br>
+
+
+  <!--End of carousel-->
+
+  <section class="O meni">
+
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col">
+          <img src="https://acegif.com/wp-content/uploads/2021/4fh5wi/welcome-15.gif" alt="O meni" class="img-fluid" />
+        </div>
+        <div class="col">
+          <h1>Robert Pauković</h1>
+          </br>
+          </br>
+          <p>Dobrodošli na moju prvu web stranicu !!</p>
+          </br>
+          <p>Svi koji prate ovu stranicu<br>naučiti će puno, puno toga korisno.
+          </p>
+          </br>
+          <p>Ovdje možete naučiti kako programirati svoju web stranicu, kako naučiti vizualizirati poslovne
+            podatke<br> i puno,punotoga</p>
+          </br>
+          <p>Uživajte i nadam se da ću vam uspjeti pomoći !!</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+
+
+  <!--Start Grid sytem and Card-->
+
+  <div class="template">
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-3">
+        <div class="card" style="width: 18rem;">
+          <img src="https://yt3.ggpht.com/ytc/AAUvwnh271lMy7DK69ZPRfY5AH7AUZrl3_kQuEWY9n3d=s900-c-k-c0x00ffffff-no-rj"
+            class="card-img-top" alt="signavio" height="200px" width="200px" />
+          <div class="card-body">
+            <h5 class="card-title">Naučite modelirati poslovne procese </h5>
+            <p class="card-text">Na ovoj poveznici možete besplatno ući u Signavio program i naučiti kako modelirati
+              poslovne procese.<br />Ako razumijete poslovanje vlastite organizacije, nije teško</p>
+            <a href="https://www.signavio.com/" type="submit" class="btn btn-primary">Uđi ovdje</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-3">
+        <div class="card" style="width: 18rem;">
+          <img src="https://rstudio.com/assets/img/og/rstudio-og-fb-1.jpg" class="card-img-top" alt="signavio"
+            height="200px" width="200px" />
+          <div class="card-body">
+            <h5 class="card-title">R studio </h5>
+            <p class="card-text">Na ovoj poveznici možete pristupiti proramu kojega je potrebno instalirati<br />Na
+              sljedećim satovima ćete upoznati rad samog programa<br />a onda ćete naučiti kako vizualizirati podatke
+            </p>
+            <a href="https://rstudio.com/" type="submit" class="btn btn-primary">Uđi ovdje</a>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="col-3">
+        <div class="card" style="width: 18rem;">
+          <img src="https://miro.medium.com/max/1200/1*eCoqJKb-QnoxWFPsjyqU0g.png" class="card-img-top" alt="signavio"
+            height="200px" width="200px" />
+          <div class="card-body">
+            <h5 class="card-title">Chart.js biblioteka </h5>
+            <p class="card-text">Na ovoj poveznici možete naučiti vizualizirati poslovne podatke na različitim grafičkim
+              oblicima. Postoje jako puno biblioteka za vizualizaciju ali ovaj je jedan od najboljih.Preduvjet učenja
+              vizualne poslovne analitike je razumjeti programski jezik JavaScript.</p>
+
+            <a href="https://www.chartjs.org/" type="submit" class="btn btn-primary">Uđi ovdje</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  </br>
+  </br>
+  </br>
+
+  <div class="template">
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-3">
+        <div class="card" style="width: 18rem;">
+          <img src="https://www.kbf.unizg.hr/wp-content/uploads/2018/09/obavijest.jpg" class="card-img-top"
+            alt="signavio" height="200px" width="200px" />
+          <div class="card-body">
+            <h5 class="card-title">Obavijest</h5>
+            <p class="card-text">Sukladno stožeru civilne zaštite nastava će se u potunosti se održati<br /> na daljinu.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card" style="width: 18rem;">
+          <img src="https://www.crometeo.hr/wp-content/uploads/2014/03/sveti_josip5.jpg" class="card-img-top"
+            alt="signavio" height="200px" width="200px" />
+          <div class="card-body">
+            <h5 class="card-title">Blagdan Svetog Josipa</h5>
+            <p class="card-text">Svim Josipima, Joškovima, Jožama, I josipama sretan imendan.<br />Svim muškarcima koji
+              su svojoj djeci očevi sretan im njihov dan.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--End Grid and Card-->
+
+  <!--Start section: O meni-->
+
+  <section class="O meni">
+
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col">
+          <img src="https://vuejs.org/images/logo.png" alt="O meni" class="img-fluid" />
+        </div>
+        <div class="col">
+          <h1> Vue. Js</h1>
+          <p>U ovom prilogu vam je dostupan izvor gdje se možete upoznati sa JavaScript bibiliotekom.</p>
+          </br>
+          <p>Dostupni su isto tako i youtube tutoriali za gradnju jedne web aplikacije nad tom bibliotekom.</p>
+          </br>
+          </br>
+          <a href="https://vuejs.org/" type="submit" class="btn btn-primary">Uđi ovdje</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!--End section-->
+  </br>
+  </br>
+  </br>
+  </br>
+  <!--Start section: Projekti-->
+
+  <section class="obavijesti">
+
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col">
+          <img
+            src="data:image/png;base64,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"
+            width="500px" height="500px" />
+        </div>
+        <div class="col">
+          <h1>React.js</h1>
+
+          <p>U ovom prilogu je dostupna još jedna bibilioteka za razvoj web aplikacija</p>
+          </br>
+          <p>Isto tako vam je dostupna skripta i video za početni razvoj web aplikacija.</p>
+          </br>
+          </br>
+          <a href="https://reactjs.org/" type="submit" class="btn btn-primary">Uđi ovdje</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!--End card-->
+
+  <!--Section: Obavijest-->
+
+  <section class="Pismeni ispit">
+
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col">
+          <img
+            src="https://play-lh.googleusercontent.com/f27_Ks3-AJC_inbgHZUtbgSYeZ1YXmhOCUdn0FOYCzYGCwWhhJ1ycGjen01sAVHLNZSK"
+            alt="kontakt" class="img-fluid" />
+        </div>
+        <div class="col">
+          <h1>Quiz</h1>
+          <p>Dana 21. ožujka održava se mali pub quiz iz različitih područja.</p>
+          </br>
+          <p>Kviz će pokrivati područja svih predmeta iz srednje škole.<br />Kviz će biti u različitim oblicima,sličani
+            Kviskoteci.<br />Kviz obuhvaća različite igre, pitanja i mogući odgovori, igra asocijacije, igra anagrama,
+            odgovori na pitanja</p>
+          </br>
+          <p>Prije započinjanja kviza učnici će imati pravo formirati timove.<br />Potrebno je imati 3 tima i četiri
+            člana, te je potrebno navesti naziv tima</p>
+          </br>
+          <p>Onaj tim koji pobijedi, plasira se u malo finale i čeka protivnike</br>Nakon malog finala dolazi 3 velika
+            finala, te za kraj superfinale</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+</body>
+
+
+<script src="script.js"></script>
+
+
+
+</html>
